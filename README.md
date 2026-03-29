@@ -20,6 +20,7 @@ Dependencies
  * carton or cpanminus
  * build-essential
  * git
+ * libssl-dev
 
 Installation
 ---
