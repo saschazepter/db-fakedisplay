@@ -18,9 +18,12 @@ Dependencies
 
  * perl >= 5.20
  * carton or cpanminus
- * build-essential
  * git
+ * libc6-dev
  * libssl-dev
+ * libxml2-dev
+ * make
+ * zlib1g-dev
 
 Installation
 ---
