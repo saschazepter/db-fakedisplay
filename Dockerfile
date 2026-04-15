@@ -4,7 +4,7 @@
 
 # docker build -t db-fakedisplay:latest --build-arg=dbf_version=$(git describe --dirty) .
 
-FROM debian:buster-slim as files
+FROM debian:buster-slim AS files
 
 ARG dbf_version=git
 
