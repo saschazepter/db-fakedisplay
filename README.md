@@ -71,16 +71,15 @@ readable by your www user, and re-run `carton install` or `cpanm --installdeps
 Installation with Docker
 ---
 
-A db-infoscreen image is available on Docker Hub. You can install and run it
-as follows:
+A db-infoscreen image for both amd64 and arm64 is available on Docker Hub.
+You can install and run it as follows:
 
 ```
-docker pull derfnull/db-fakedisplay:latest
-docker run --rm -p 8000:8092 -v "$(pwd)/templates:/app/ext-templates:ro" derfnull/db-fakedisplay
+docker run --rm -p 8000:8092 -v "$(pwd)/templates:/app/ext-templates:ro" derfnull/db-fakedisplay:latest
 ```
 
-This will make the web service available on port 8000.  Note that you should
-provide imprint and privacy policy pages, see the Setup notes below.
+This will make the web service available on port 8000.
+Note that you should provide an imprint and a privacy policy in the `templates/` directory; see the Setup notes below.
 
 Use `docker run -e DBFAKEDISPLAY_WORKERS=4 ...` and similar to pass environment
 variables to the db-infoscreen service.
